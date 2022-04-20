@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--color-one: hsl(225, 100%, 94%);
+--color-two: hsl(245, 75%, 52%);
+--color-three: hsl(225, 100%, 98%);
+--color-four: hsl(224, 23%, 55%);
+--color-five: hsl(223, 47%, 23%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./images/pattern-background-mobile.svg) var(--color-one);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body main {
+    width: 31rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: white;
+    margin: 0 auto;
+}
+
+body main .head img {
+    width: 31rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+body main .content {
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    line-height: 2.5rem;
+    color: hsl(224, 23%, 55%);
+}
+
+main .content h1 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    color: hsl(223, 47%, 23%);
+}
+
+main .plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+main .plan .coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+main .plan .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .plan .row img {
+    margin: .5rem;
+}
+
+.row p.weight-med {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: .5rem;
+}
+
+div.button-change {
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+
+p.price {
+    color: hsl(224, 23%, 55%);
+    font-size: 1.4rem;
+}
+
+div.coluna{
+    margin-left: 1rem;
+}
+
+div.button {
+    width: 80%;
+    border-radius: 1rem;
+    background-color: hsl(245, 75%, 52%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1.6rem 0;
+    margin-top: 1rem;
+    color: white;
+    box-shadow: 0 1.5rem .5rem var(--color-one);
+}
+
+div.cancel {
+    width: 80%;
+    padding: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-four);
+    margin-bottom: 1rem;
+}
+
+.button-change p, .button, .cancel p:hover {
+    cursor: pointer;
+}
+
+.button-change p:hover {
+    color: var(--color-four);
+}
+
+.button:hover {
+    background-color: var(--color-four);
+}
+
+@media (min-width: 375px) {
+    body {
+        background: url(./images/pattern-background-desktop.svg) var(--color-one);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    body main {
+        width: 39rem;
+    }
+
+    body main .head img {
+        width: 39rem;
+    }
+
+    div.button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    main .plan {
+        margin-bottom: 1.5rem;
+    }
+
+}
